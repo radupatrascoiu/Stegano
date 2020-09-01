@@ -1,0 +1,34 @@
+Patrascoiu Ion-Radu, 322 CD
+
+In implementarea temei am utilizat pentru fiecare task cateva functii, alocand
+totul pe stiva, dupa cum era precizat in enunt.
+
+Task 1:
+
+    - Functia bruteforce_singlebyte_xor: care primeste ca parametru imaginea si
+face xor intre fiecare cheie de la 0 la 255, cu ajutorul functiei
+"traverseXOR", se verifica daca s-a gasit cuvantul "revient". In caz afirmativ,
+se afiseaza propozitia care contine cuvantul, cheie folosita pentru decriptare
+si linia la care s-a gasit. Altfel, se merge mai departe, se restaureaza
+matricea, se ia urmatoarea cheie si se cauta in continuare;
+    - Functia traverseXOR: care, dupa cum am precizat si mai sus, face xor
+intre cheia data si matrice;
+    - Functia my_strcmp: aloca local spatiu pentru "revient" si verifica daca
+o succesiune de litere este cuvantul cautat.
+    - Functia traverseLine: parcurge o linie data ca parametru, apeleaza
+functia "my_strcmp" si returneaza -2 in caz de esec si 1 in caz afirmativ.
+    - Functia traverseMatrix: parcurge intreaga matrice si returneaza valorile
+cerute(cheia si linia).
+    - Functia print_message: primeste o linie si afiseaza textul de pe linia
+respectiva.
+
+Task 2: 
+    - am apelat functia "bruteforce_singlebyte_xor", pentru a returna cheia si
+linia, apoi am pus mesajul cerut in matrice, am codificat cu noua cheie si am
+printat noua matrice.
+    - Functia make_message: primeste linia, pune mesajul pe stiva si suprascrie
+urmatoarea linie din matrice cu acesta.
+
+Task 6:
+    - am implementat o parte din el, insa nu functioneaza asa cum ar trebui :(.
+
